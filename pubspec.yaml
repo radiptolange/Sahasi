@@ -1,0 +1,50 @@
+name: sahasi
+description: Women's safety app
+version: 1.0.0+1
+
+environment:
+  sdk: '^3.10.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # For getting the user's location
+  geolocator: ^14.0.2 
+  # For checking internet connection
+  connectivity_plus: ^6.0.3
+  # For converting coordinates to address
+  geocoding: ^3.0.0
+
+  # To request permissions (like location, camera)
+  permission_handler: ^12.0.1 
+  # For local database storage (Contacts)
+  sqflite: ^2.3.3
+  path: ^1.9.0
+  shared_preferences: ^2.2.2 
+  flutter_phone_direct_caller: ^2.1.1 # For Direct Calling
+# SMS + call handling
+  #telephony: ^0.1.0
+    # RECOMMENDED: For accessing the device camera and recording video
+  camera: ^0.11.3
+
+   # RECOMMENDED: For accessing the device's file system paths
+  path_provider: ^2.1.3
+
+
+  # For making phone calls and sending SMS
+  url_launcher: ^6.3.0
+ # flutter_phone_direct_caller: ^2.1.0
+
+  # For beautiful icons (optional, but recommended)
+  cupertino_icons: ^1.0.8
+  video_player: ^2.10.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  # Updated to a newer version to match modern Flutter defaults
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
